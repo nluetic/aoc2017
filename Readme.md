@@ -2,4 +2,4 @@
 
 available from https://adventofcode.com/2017/
 
-used for perl6 exercises
+perl6 exercises
