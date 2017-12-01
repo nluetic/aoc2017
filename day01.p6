@@ -16,7 +16,7 @@ sub MAIN(Str :$inputfile = "$base.in", Bool :$use_distance = False) {
     my @captcha = $input.comb(/\d/);
 
     if $use_distance {
-        if !(@captcha.elems % 2 == 0) {
+        if !(@captcha.elems %% 2) {
             die("uneven number of elements found");
         }
         $distance = Int(@captcha.elems / 2);
