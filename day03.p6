@@ -38,14 +38,6 @@ use v6;
 
 sub find_next_ring(Int $number) {
 
-    # find next biggest divisible by 8
-    my $div_by_8 = $number;
-    if !($div_by_8 %% 2) {
-        $div_by_8++;
-    }
-    while !($div_by_8 %% 8) { $div_by_8 += 2; }
-
-    my $factor = $div_by_8 / 8;
     # find next ring - next divisible by 8 that is a sum of 1,2,3 ...
     my $ring = 0;
     my $i = 0;
